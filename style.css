@@ -1,0 +1,51 @@
+/* Reset default margin and padding for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center text within the body */
+}
+
+/* Center the main content */
+h1, p, a {
+    margin: 20px auto; /* Center elements horizontally */
+}
+
+/* Style the Download PDF link */
+a[download] {
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+a[download]:hover {
+    background-color: #0056b3;
+}
+
+/* Style the PayPal button image */
+a[href^="https://www.paypal.com/donate/?hosted_button_id=SC3QJY6LVXX24"] {
+    display: block; /* Make the image a block element for centering */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image does not exceed its container's width */
+}
+
+/* Optional: Add some padding to the PayPal button */
+a[href^="https://www.paypal.com/donate/?hosted_button_id=SC3QJY6LVXX24"] img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Optional: Center the image vertically */
+/* You may need to adjust this based on your image's aspect ratio */
+a[href^="https://www.paypal.com/donate/?hosted_button_id=SC3QJY6LVXX24"] img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    max-height: 200px; /* Adjust the max-height as needed */
+}
